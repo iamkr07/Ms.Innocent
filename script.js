@@ -1,8 +1,17 @@
 
 // Memory Function to Show Pop-Up Messages
 function showMemory(memoryText) {
-    alert(`Memory: ${memoryText} - Here’s what happened!`);
+    let message;
+    if (memoryText === "Our First Meeting") {
+        message = "Memory: Our First Meeting - After 6 months of texts and calls we finally got to meet each other.The drive that brought us together,the aderaline that we had in meeting each other's face and the urge to see the other's smile so badly";
+    } else if (memoryText === "Our First Promise") {
+        message = "Memory: Our First Promise - No matter what happenes,how good or bad it is,how harder it can get;The We got for each other would never ever change and remain the same as day one.Ms.Innocent and Mr.Innocent.Forever.";
+    } else {
+        message = `Memory: ${memoryText} - Here’s what happened!`;
+    }
+    alert(message);
 }
+
 
 // Quiz Questions and Answers
 const quizQuestions = [
