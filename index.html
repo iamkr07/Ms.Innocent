@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy 3 Years, Ms. Innocent!</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .memory {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        #quiz-content {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+    </style>
 </head>
 <body>
     <!-- Greeting Section -->
@@ -17,8 +33,8 @@
     <!-- Timeline Section -->
     <section id="timeline">
         <h2>Our Memories</h2>
-        <div class="memory" onclick="showMemory('Our First Meeting')">🌸 First Meeting</div>
-        <div class="memory" onclick="showMemory('Our First Outing')">🌱 First Outing</div>
+        <div class="memory" onclick="showMemory('first_meeting')">🌸 First Meeting</div>
+        <div class="memory" onclick="showMemory('first_outing')">🌱 First Outing</div>
     </section>
 
     <!-- Quiz Section -->
@@ -36,6 +52,15 @@
         <p>With all the gratitude and warmth, today and always.</p>
     </section>
 
-    <script src="script.js"></script>
+    <script>
+        function showMemory(memoryType) {
+            const quizContent = document.getElementById('quiz-content');
+            if (memoryType === 'first_meeting') {
+                quizContent.innerHTML = "Output for our first meeting: It was a memorable occasion where we discussed our goals.";
+            } else if (memoryType === 'first_outing') {
+                quizContent.innerHTML = "Output for our first outing: We had a great time exploring the city together!";
+            }
+        }
+    </script>
 </body>
 </html>
