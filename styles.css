@@ -1,0 +1,51 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #ff6f91;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#timeline, #quiz, #message {
+    margin: 30px 0;
+}
+
+.memory {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.memory:hover {
+    background-color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6f91;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff91a6;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
