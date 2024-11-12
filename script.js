@@ -19,7 +19,7 @@ const quizQuestions = [
     { question: "What's the most important memory of us that we'd never forget?", answer: "Our first hug" },
     { question: "What's the one thing we both fear of?", answer: "Letting go of the other" },
     { question: "What's the food that you still owe me?", answer: "Burger" },
-    { question: "When did we 'sync' for the first time?", answer: "Sid Sriram song" }
+    { question: "Our first favourite song?", answer: "Señorita" }
 ];
 
 function loadQuiz() {
