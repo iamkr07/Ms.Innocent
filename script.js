@@ -50,8 +50,15 @@ function checkAnswers() {
             correctAnswers++;
         }
     });
-    alert(`You got ${correctAnswers} out of ${quizQuestions.length} correct!`);
+
+    if (correctAnswers >= 3) {
+        alert(`You got ${correctAnswers} out of ${quizQuestions.length} correct! Here’s a special message for you:`);
+        document.getElementById("message-content").style.display = "block"; // Show the message
+    } else {
+        alert(`You got ${correctAnswers} out of ${quizQuestions.length} correct. Try again to unlock the message!`);
+    }
 }
+
 
 // Start Quiz on Page Load
 loadQuiz();
