@@ -15,7 +15,7 @@ function showMemory(memoryText) {
 
 // Quiz Questions and Answers
 const quizQuestions = [
-    { question: "When did we meet?", answer: "13 Nov 2020" },
+    { question: "When did we meet?", answer: "13 Nov 2021" },
     { question: "What's the most important memory of us that we'd never forget?", answer: "Our first hug" },
     { question: "What's the one thing we both fear of?", answer: "Letting go of the other" },
     { question: "What's the food that you still owe me?", answer: "Burger" },
